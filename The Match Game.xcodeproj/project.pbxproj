@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44796F6928761D7B008DE248 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44796F6828761D7B008DE248 /* AppDelegate.swift */; };
+		44796F6B28761D7B008DE248 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44796F6A28761D7B008DE248 /* SceneDelegate.swift */; };
+		44796F6D28761D7B008DE248 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44796F6C28761D7B008DE248 /* ViewController.swift */; };
+		44796F7028761D7B008DE248 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44796F6E28761D7B008DE248 /* Main.storyboard */; };
+		44796F7228761D7E008DE248 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44796F7128761D7E008DE248 /* Assets.xcassets */; };
+		44796F7528761D7E008DE248 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44796F7328761D7E008DE248 /* LaunchScreen.storyboard */; };
+		44FE09392879AA5000DEF02F /* cardflip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44FE09352879AA5000DEF02F /* cardflip.wav */; };
+		44FE093A2879AA5000DEF02F /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44FE09362879AA5000DEF02F /* shuffle.wav */; };
+		44FE093B2879AA5000DEF02F /* dingwrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44FE09372879AA5000DEF02F /* dingwrong.wav */; };
+		44FE093C2879AA5000DEF02F /* dingcorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 44FE09382879AA5000DEF02F /* dingcorrect.wav */; };
+		44FE093E2879AAB000DEF02F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FE093D2879AAB000DEF02F /* SoundManager.swift */; };
+		44FE09412879AAC900DEF02F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44FE09402879AAC900DEF02F /* AVFoundation.framework */; };
+		44FFB09B2876BF0800FD2215 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFB09A2876BF0800FD2215 /* CardModel.swift */; };
+		44FFB09D2876CFA100FD2215 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFB09C2876CFA100FD2215 /* Card.swift */; };
+		44FFB09F2876D6DA00FD2215 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FFB09E2876D6DA00FD2215 /* CardCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		44796F6528761D7B008DE248 /* The Match Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Match Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44796F6828761D7B008DE248 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44796F6A28761D7B008DE248 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44796F6C28761D7B008DE248 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44796F6F28761D7B008DE248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44796F7128761D7E008DE248 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44796F7428761D7E008DE248 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44796F7628761D7E008DE248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44FE09352879AA5000DEF02F /* cardflip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardflip.wav; sourceTree = "<group>"; };
+		44FE09362879AA5000DEF02F /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		44FE09372879AA5000DEF02F /* dingwrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingwrong.wav; sourceTree = "<group>"; };
+		44FE09382879AA5000DEF02F /* dingcorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dingcorrect.wav; sourceTree = "<group>"; };
+		44FE093D2879AAB000DEF02F /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		44FE09402879AAC900DEF02F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		44FFB09A2876BF0800FD2215 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		44FFB09C2876CFA100FD2215 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		44FFB09E2876D6DA00FD2215 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44796F6228761D7B008DE248 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44FE09412879AAC900DEF02F /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44796F5C28761D7B008DE248 = {
+			isa = PBXGroup;
+			children = (
+				44796F6728761D7B008DE248 /* The Match Game */,
+				44796F6628761D7B008DE248 /* Products */,
+				44FE093F2879AAC900DEF02F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44796F6628761D7B008DE248 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44796F6528761D7B008DE248 /* The Match Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44796F6728761D7B008DE248 /* The Match Game */ = {
+			isa = PBXGroup;
+			children = (
+				44FE09342879AA3800DEF02F /* Sounds */,
+				44796F6828761D7B008DE248 /* AppDelegate.swift */,
+				44796F6A28761D7B008DE248 /* SceneDelegate.swift */,
+				44796F6C28761D7B008DE248 /* ViewController.swift */,
+				44FFB09C2876CFA100FD2215 /* Card.swift */,
+				44FFB09A2876BF0800FD2215 /* CardModel.swift */,
+				44FFB09E2876D6DA00FD2215 /* CardCollectionViewCell.swift */,
+				44796F6E28761D7B008DE248 /* Main.storyboard */,
+				44796F7128761D7E008DE248 /* Assets.xcassets */,
+				44796F7328761D7E008DE248 /* LaunchScreen.storyboard */,
+				44796F7628761D7E008DE248 /* Info.plist */,
+			);
+			path = "The Match Game";
+			sourceTree = "<group>";
+		};
+		44FE09342879AA3800DEF02F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				44FE093D2879AAB000DEF02F /* SoundManager.swift */,
+				44FE09352879AA5000DEF02F /* cardflip.wav */,
+				44FE09382879AA5000DEF02F /* dingcorrect.wav */,
+				44FE09372879AA5000DEF02F /* dingwrong.wav */,
+				44FE09362879AA5000DEF02F /* shuffle.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		44FE093F2879AAC900DEF02F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44FE09402879AAC900DEF02F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44796F6428761D7B008DE248 /* The Match Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44796F7928761D7E008DE248 /* Build configuration list for PBXNativeTarget "The Match Game" */;
+			buildPhases = (
+				44796F6128761D7B008DE248 /* Sources */,
+				44796F6228761D7B008DE248 /* Frameworks */,
+				44796F6328761D7B008DE248 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Match Game";
+			productName = "The Match Game";
+			productReference = 44796F6528761D7B008DE248 /* The Match Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44796F5D28761D7B008DE248 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44796F6428761D7B008DE248 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 44796F6028761D7B008DE248 /* Build configuration list for PBXProject "The Match Game" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44796F5C28761D7B008DE248;
+			productRefGroup = 44796F6628761D7B008DE248 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44796F6428761D7B008DE248 /* The Match Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44796F6328761D7B008DE248 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44796F7528761D7E008DE248 /* LaunchScreen.storyboard in Resources */,
+				44FE09392879AA5000DEF02F /* cardflip.wav in Resources */,
+				44FE093B2879AA5000DEF02F /* dingwrong.wav in Resources */,
+				44796F7228761D7E008DE248 /* Assets.xcassets in Resources */,
+				44796F7028761D7B008DE248 /* Main.storyboard in Resources */,
+				44FE093C2879AA5000DEF02F /* dingcorrect.wav in Resources */,
+				44FE093A2879AA5000DEF02F /* shuffle.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44796F6128761D7B008DE248 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44796F6D28761D7B008DE248 /* ViewController.swift in Sources */,
+				44FFB09B2876BF0800FD2215 /* CardModel.swift in Sources */,
+				44FFB09D2876CFA100FD2215 /* Card.swift in Sources */,
+				44796F6928761D7B008DE248 /* AppDelegate.swift in Sources */,
+				44FFB09F2876D6DA00FD2215 /* CardCollectionViewCell.swift in Sources */,
+				44FE093E2879AAB000DEF02F /* SoundManager.swift in Sources */,
+				44796F6B28761D7B008DE248 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44796F6E28761D7B008DE248 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44796F6F28761D7B008DE248 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44796F7328761D7E008DE248 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44796F7428761D7E008DE248 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44796F7728761D7E008DE248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44796F7828761D7E008DE248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44796F7A28761D7E008DE248 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The Match Game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RinarProject.The-Match-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44796F7B28761D7E008DE248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N6S24J8FW5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "The Match Game/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RinarProject.The-Match-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44796F6028761D7B008DE248 /* Build configuration list for PBXProject "The Match Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44796F7728761D7E008DE248 /* Debug */,
+				44796F7828761D7E008DE248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44796F7928761D7E008DE248 /* Build configuration list for PBXNativeTarget "The Match Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44796F7A28761D7E008DE248 /* Debug */,
+				44796F7B28761D7E008DE248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44796F5D28761D7B008DE248 /* Project object */;
+}
